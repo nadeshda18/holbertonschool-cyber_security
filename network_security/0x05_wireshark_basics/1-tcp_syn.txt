@@ -1,1 +1,1 @@
-tcp.window_size <= 102
+tcp.flags.syn == 1 and tcp.window_size <= 102
