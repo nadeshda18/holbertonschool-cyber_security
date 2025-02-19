@@ -1,3 +1,2 @@
 #!/bin/bash
-john --wordlist=rockyou.txt --format=raw-sha256 "$1"
-john --show "$1" | grep -oP '^[^:]*' > 4-password.txt
+john --wordlist=rockyou.txt "$1" && john --show "$1" | awk -F: '{print $2}' > 4-password.txt
