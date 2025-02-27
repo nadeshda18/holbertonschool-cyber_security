@@ -1,4 +1,3 @@
 #!/bin/bash
-iptables -P INPUT DROP && iptables -A INPUT -p tcp --dport ssh -j ACCEPT
-iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
-iptable -A INPUT -j DROP
+iptables -F; iptables -P INPUT DROP
+iptables -A INPUT -p tcp --dport ssh -j ACCEPT; iptables -A INPUT -j DROP
