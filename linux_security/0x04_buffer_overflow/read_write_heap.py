@@ -5,7 +5,7 @@ Usage: read_write_heap.py pid search_string replace_string
     and strings are ASCII
 The script should look only in the heap of the process
 Output: you can print whatever you think is interesting
-On usage error, print an error message on stdout and exit 
+On usage error, print an error message on stdout and exit
 with status code 1
 """
 
